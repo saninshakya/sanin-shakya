@@ -1,0 +1,359 @@
+/** Custom responsive css */
+@media (min-width:576px){
+  .modal-dialog-centered::before {
+    height: calc(100vh - (1.75rem * 2));
+  }
+}
+
+@media (min-width:992px){
+	.tracking-form .modal-dialog {
+	    max-width: 960px;
+	}
+	.tracking-form .modal-body {
+	    padding: 3rem 5rem;
+	}
+	.tracking-form .form-row > .col-md-4:first-child {
+	    padding-right: 3rem;
+	}
+	.tracking-form .form-row > .col-md-4:nth-child(2) {
+	    padding-left: 1.5rem;
+	    padding-right: 1.5rem;
+	}
+	.tracking-form .form-row > .col-md-4:last-child {
+	    padding-left: 3rem;
+	}
+	.numbers-row-nav {
+	  right: 2.5rem;
+	}
+	.divide-item.d-more-set {
+		display: block!important;
+	}
+	.logout-item.d-more-set,
+	.login-item.d-more-set {
+		display: none!important;
+	}
+
+	/* Set Placeholder for Tracking Number*/
+	input#track.form-control::-webkit-input-placeholder {
+	  color: #fff;
+	}
+	input#track.form-control::-moz-placeholder {
+	  color: #fff;
+	}
+	input#track.form-control:-ms-input-placeholder {
+	  color: #fff;
+	}
+	input#track.form-control:-moz-placeholder {
+	  color: #fff;
+	}
+}
+
+/** Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+	/** Custom table width for mobile : Tracking Lists Table */
+	.tracking-list-content .table-bordered {
+	    width: 150vw!important;
+	    max-width: 150vw!important;
+	}
+	.tracking-list-content .table-bordered td {
+	    width: 26.66vw;
+	}
+}
+
+/** Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+	.ats-header {
+	    background-position: center center;
+	}
+	.top-right-section {
+	    margin-top: 3rem;
+	}
+	.top-right-section .d-more-set {
+	    display: none;
+	}
+	.top-right-section a.text-dark {
+	    padding: 0 !important;
+	    font-size: 1rem;
+	    color: #383a39 !important;
+	    top: 0;
+	}
+	.search-tracking-no {
+	    bottom: 1.5rem;
+	}
+
+	/** Custom Navbar Toggle */
+	.navbar {
+	    top: 0;
+		bottom: auto;
+		padding: 0;
+		background-color: transparent;
+		z-index: 999;
+	}
+	.navbar-expand-lg > .container {
+	    justify-content: flex-end;
+	    background-color: #eb662e;
+	    max-width: 100%;
+	}
+	.navbar-expand-lg > .container.no-bg-color {
+	    background-color: transparent;
+	    position: relative;
+	}
+	.navbar-toggler.collapsed {
+	    position: absolute;
+	    top: 0.35rem;
+	    right: 1.7rem;
+	}
+	.navbar-dark .navbar-toggler {
+	    border: none;
+	    outline: none;
+	    padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.navbar-dark .navbar-toggler-icon {
+	    background: none;
+	}
+    .navbar-toggler span.icon-bar {
+      	transition: all 0.15s;
+    }
+    .navbar-toggler .icon-bar {
+      	display: block;
+      	width: 25px;
+      	height: 3px;
+      	border-radius: 1px;
+      	background-color: #383a39;
+      	margin: .25rem 0;
+    }
+    .navbar-toggler span:nth-child(1) {
+      	transform: rotate(45deg);
+      	transform-origin: 10% 10%;
+    }
+    .navbar-toggler span:nth-child(2) {
+      	opacity: 0;
+    }
+    .navbar-toggler span:nth-child(3) {
+      	transform: rotate(-45deg);
+      	transform-origin: 10% 90%;
+    }
+    .navbar-toggler.collapsed span:nth-child(1), 
+    .navbar-toggler.collapsed span:nth-child(2), 
+    .navbar-toggler.collapsed span:nth-child(3) {
+	    transform: rotate(0);
+	    opacity: 1;
+	}
+	#navbarResponsive .navbar-nav {
+	    background-color: #fff;
+	    min-height: 100vh;
+	}
+	#navbarResponsive .nav-item {
+		background-color: #fff;
+		padding: 0.5rem 2rem;
+		border-bottom: 1px solid #bebfbe;
+	}
+	#navbarResponsive .nav-item:hover,
+	#navbarResponsive .nav-item:focus,
+	#navbarResponsive .nav-item:hover {
+	    background-color: rgba(193, 192, 191,0.25);
+	}
+	#navbarResponsive .nav-item .nav-link {
+		color: #383a39;
+		text-transform: capitalize;
+	}
+
+	/** Tracking Details */
+	.tracking-detail-content .col-sm-3 {
+	    padding-right: 15px!important;
+	    padding-left: 15px!important;
+	}
+	.tracking-detail-content label {
+	    font-size: 0.85rem;
+	}
+	.text-intro {
+	    margin: 3rem 0;
+	    font-size: 34px;
+	}
+
+	.tracking-form .modal-dialog {
+	    max-width: 700px;
+	}
+
+	/** Tracking List */
+	.tracking-list-content h1 {
+	    margin-top: 2rem !important;
+	}
+
+	/** Custom table width for mobile : Tracking Details Table */
+	.tracking-detail-content .table-bordered {
+	    width: 150vw;
+	    max-width: 300vw;
+	}
+	.tracking-detail-content .table-bordered td {
+	    width: 25vw;
+	}
+	.tracking-detail-content .table-bordered td:nth-child(3), 
+	.tracking-detail-content .table-bordered td:nth-child(4) {
+	    width: 50vw;
+	}
+
+/** Custom table width for mobile : Tracking Lists Table */
+	.tracking-list-content .table-bordered {
+	    width: 200vw!important;
+	    max-width: 200vw!important;
+	}
+	.tracking-list-content .table-bordered td {
+	    width: 22.22vw;
+	}
+
+}
+
+/** Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+	.ats-logo {
+	    width: 100%;
+	}
+	.search-tracking-no {
+	    bottom: 1rem;
+	}
+	.search-tracking-no label {
+	    color: #383a39 !important;
+	    position: relative;
+		top: 0.5rem;
+		display: none;
+	}
+	.search-tracking-no .form-inline {
+	    flex-flow: column;
+	    align-items: flex-start;
+		width: 100%;
+		padding: 0 15px;
+		max-width: 540px;
+	}
+	.search-tracking-no .form-inline .form-group {
+	    margin-left: 0 !important;
+	    margin-right: 0 !important;
+	    width: 100%;
+	}
+	.search-tracking-no .form-inline .form-control {
+	    width: 100%;
+	}
+	.btn-orange {
+	    width: 100%;
+	}
+	.hidden-mobile {
+		display: none;
+	}
+	.visible-mobile {
+		display: block;
+	}
+	.container-fluid.visible-mobile {
+	    padding: 0;
+	}
+	.text-intro {
+	    margin: 2rem 0 0.5rem;
+	    font-size: 1.25rem;
+	    padding: 0;
+	}
+	.navbar-expand-lg > .container.no-bg-color {
+	    max-width: 540px;
+	}
+	.navbar-toggler.collapsed {
+	    right: 0.25rem;
+	}
+
+	/** Tracking Details */
+	.container.tracking-detail-content {
+	    min-height: 1px;
+	    margin-bottom: 5rem;
+	}
+	.tracking-detail-content .col-sm-3 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.tracking-detail-content .row.mt-5.mb-5 {
+	    margin-top: 0 !important;
+	}
+
+	/** Tracking Form */
+	.tracking-form .modal-body button.btn-orange {
+	    margin: 1.35rem 0 0 !important;
+	}
+	.input-group-addon.calendar {
+	    top: 1px;
+	}
+
+	/** Custom table width for mobile */
+	.tracking-detail-content .table-bordered {
+	    width: 200vw;
+	}
+}
+
+/** Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+	.ats-header {
+    	min-height: 330px;
+    }
+	.ats-logo {
+	    padding-top: 0 !important;
+	    margin-left: -15px;
+	}
+	.modal-content {
+	    padding: 0 1rem;
+	}
+
+	/** Custom table width for mobile */
+	.tracking-detail-content .table-bordered {
+	    width: 250vw;
+	}
+	.tracking-detail-content .table-bordered td {
+	    width: 50vw;
+	}
+	.tracking-detail-content .table-bordered td:nth-child(3), 
+	.tracking-detail-content .table-bordered td:nth-child(4) {
+	    width: 100vw;
+	}
+
+	/** Custom table width for mobile : Tracking Lists Table */
+	.tracking-list-content .table-bordered {
+	    width: 400vw!important;
+	    max-width: 400vw!important;
+	}
+	.tracking-list-content .table-bordered td {
+	    width: 44.44vw;
+	}
+
+}
+
+@media (max-width: 575.98px) and (orientation: landscape) { 
+	.search-tracking-no .form-inline {
+		padding: 0;
+	}
+
+	/** Custom table width for mobile */
+	.tracking-detail-content .table-bordered {
+	    width: 200vw;
+	}
+
+	/** Custom table width for mobile : Tracking Lists Table */
+	.tracking-list-content .table-bordered {
+	    width: 300vw!important;
+	    max-width: 300vw!important;
+	}
+	.tracking-list-content .table-bordered td {
+	    width: 33.33vw;
+	}
+}
+
+/** Extra small devices (portrait phones, less than 360px) */
+@media (max-width: 360px) {
+
+	/** Custom table width for mobile */
+	.tracking-detail-content .table-bordered {
+	    width: 300vw;
+	}
+	.tracking-detail-content .table-bordered td {
+	    width: 40vw;
+	}
+
+}
+
+
+
+

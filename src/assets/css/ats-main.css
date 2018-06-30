@@ -1,0 +1,34 @@
+/** Font face */
+@font-face {
+  font-family: 'Roboto';
+  src: url('font/Roboto-Medium.eot');
+  src: url('font/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+       url('font/Roboto-Medium.ttf') format('truetype');
+}
+
+/** Base style overrides */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.765;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/** Header */
+.ats-header {
+  min-height: 80px;
+  background: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}

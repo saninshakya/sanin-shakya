@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.table-show {
+  empty-cells: show;
+}
+
+.table-hide {
+  empty-cells: hide;
+}
+
+/* PRESENTATONAL STYLES */
+body {
+  background: #333;
+  padding: 25px 0;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 3em;
+  text-align: center;
+}
+
+table {
+  margin: 25px auto;
+}
+
+td {
+  background: #fff;
+  border: 1px solid #999;
+  padding: 5px 10px;
+  color: green;
+  cursor: pointer;
+}
+
+td:hover {
+  background: #eaeaea;
+  border: 2px solid #000;
+}
+
+h1 {
+  font-size: 14px;
+}
+
+td{
+    height: 70px;
+    width: 70px;
+    border: 2px solid #000;
+}
+
+/*<i id = "drone-img" class="fa fa-arrow-right" style="font-size:48px;color:red"*/
+
+.active {
+    background-image: url("/assets/images/icon/arrow.png")!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    width: 10px!important;
+    height: 10px!important;
+}
+
+.steps{
+  margin-top: 40px;
+  width: 500px;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.direction-icon{
+  text-align: center;
+}
+
+.steps ul:first-of-type li:first-child {
+  background-color: yellow!important;
+}
